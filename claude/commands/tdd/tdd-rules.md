@@ -124,7 +124,11 @@
         - '<test-desiderta-rule>' 준수
     - 최소한의 코드로 테스트가 성공하도록 구현을 추가(little golf game, '<make-it-work-rule>' 준수)
         - 이때는 '<tpp-rule>' 준수
-        - 하나의 테스트가 성공하면 javadoc comment에 있는 테스트 항목에 완료 표시('X')를 해줘
+    - **테스트 실행으로 성공 확인**
+      - jetbrains:run_configuration을 사용해서 테스트를 실행하고 통과하는지 확인
+      - 실패하면 코드를 수정하고 다시 실행
+      - 모든 테스트가 통과할 때까지 반복
+    - 테스트가 성공하면 javadoc comment에 있는 테스트 항목에 완료 표시('X')를 해줘
     - 작업한 내역을 마크다운 파일에 반영
         - 각각의 테스트에 대한 작업 내역을 '### n.x' 레벨로 추가
         - multiline git commit message 수준으로 작성해줘
